@@ -10,7 +10,7 @@ License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: GL-devel
-BuildRequires: gconf2-devel cairo-devel
+BuildRequires: libGConf2-devel cairo-devel
 BuildRequires: libxcomposite-devel libpng-devel libxfixes-devel libxdamage-devel
 
 %description
