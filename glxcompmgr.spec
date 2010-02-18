@@ -6,6 +6,7 @@ Summary: glxcompmgr - OpenGL compositing manager
 Group: Development/X11
 # git-archive --format=tar --prefix=glxcompmgr/ master | bzip2 > glxcompmgr.tar.bz2
 Source: glxcompmgr.tar.bz2
+Patch0: glxcompmgr-fix-link.patch
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
@@ -22,12 +23,11 @@ plug-in system and it is designed to run well on most graphics hardware.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p0 -b .link
 
 %build
-sh autogen.sh
-
-%configure
-
+autoreconf -fi
+%configure2_5x
 %make
 
 %install
