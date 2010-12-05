@@ -1,7 +1,7 @@
 Name: glxcompmgr
 # date -u +%Y%m%d
 Version: 20080416
-Release: %mkrel 3
+Release: %mkrel 4
 Summary: glxcompmgr - OpenGL compositing manager
 Group: Development/X11
 # git-archive --format=tar --prefix=glxcompmgr/ master | bzip2 > glxcompmgr.tar.bz2
