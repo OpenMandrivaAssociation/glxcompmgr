@@ -10,6 +10,11 @@ Patch0: glxcompmgr-fix-link.patch
 License: MIT
 BuildRoot: %{_tmppath}/%{name}-root
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: GL-devel
 BuildRequires: libGConf2-devel cairo-devel
 BuildRequires: libxcomposite-devel libpng-devel libxfixes-devel libxdamage-devel
